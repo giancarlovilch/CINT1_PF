@@ -9,8 +9,8 @@
     <link rel="preload" href="/src/css/normalize.css" as="style">
     <link rel="stylesheet" href="/src/css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="/software/src/css/style.css" as="style">
-    <link rel="stylesheet" href="/software/src/css/style.css">
+    <link rel="preload" href="/src/css/style.css" as="style">
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" type="image/x-icon" href="/src/img/SB007.ico">
     <meta property="og:description" content="Salud y cuidado de familia a familia. ¡Bienvenidos a SoloBoticas!" />
 </head>
