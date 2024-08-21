@@ -8,6 +8,7 @@
     <title>GRUPO KGyR S.A.C</title>
     <link rel="preload" href="/src/css/normalize.css" as="style">
     <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href="/src/css/style.css" as="style">
     <link rel="stylesheet" href="/src/css/style.css">
