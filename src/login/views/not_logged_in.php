@@ -1,5 +1,4 @@
 <?php
-// Mostrar posibles errores o mensajes (del objeto de inicio de sesión)
 if (isset($login)) {
     if ($login->errors) {
         foreach ($login->errors as $error) {
