@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GRUPO KGyR S.A.C</title>
     <link rel="preload" href="/src/css/normalize.css" as="style">
     <link rel="stylesheet" href="/src/css/normalize.css">
@@ -36,7 +36,7 @@
                 <li class="list__item">
                     <div class="list__button">
                         <img src="assets/schedulee.svg" class="list__img">
-                        <a href="index.php?page=horarios#sidebar-1" class="nav__link">Horarios</a>
+                        <a href="index.php?page=horario#sidebar-1" class="nav__link">Horario</a>
                     </div>
                 </li>
 
@@ -48,7 +48,7 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="index.php?page=misventas#sidebar-1" class="nav__link nav__link--inside">Control
+                            <a href="index.php?page=miventa#sidebar-1" class="nav__link nav__link--inside">Control
                                 de Ventas</a>
                         </li>
                     </ul>
@@ -63,8 +63,7 @@
 
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="https://zfrmz.com/cquJvi40wkzf09wECYjS" class="nav__link nav__link--inside">Agente
-                                BCP</a>
+                            <a href="index.php?page=micaja#sidebar-1" class="nav__link nav__link--inside">Control de Caja</a>
                         </li>
                     </ul>
                 </li>
@@ -73,18 +72,18 @@
                 <li class="list__item">
                     <div class="list__button">
                         <img src="assets/message.svg" class="list__img">
-                        <a href="index.php?page=info#sidebar-1" class="nav__link">Información</a>
+                        <a href="index.php?page=informacion#sidebar-1" class="nav__link">Información</a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="list__button">
-                        <img src="assets/message.svg" class="list__img">
+                        <img src="assets/registro.svg" class="list__img">
                         <a href="register.php" class="nav__link">Registro</a>
                     </div>
                 </li>
                 <li class="list__item">
                     <div class="list__button">
-                        <img src="assets/message.svg" class="list__img">
+                        <img src="assets/out.svg" class="list__img">
                         <a href="index.php?logout" class="nav__link">Salir</a>
                     </div>
                 </li>
@@ -93,19 +92,22 @@
 
         <aside class="sidebar-1" id="sidebar-1">
             <?php
-            $allowed_pages = ['horarios', 'info', 'misventas'];
+            $allowed_pages = ['horario', 'miventa','micaja','informacion' ];
 
             if (isset($_GET['page']) && in_array($_GET['page'], $allowed_pages)) {
                 $page = $_GET['page'];
                 switch ($page) {
-                    case 'horarios':
-                        include('views/intranet/horarios.php');
+                    case 'horario':
+                        include('views/intranet/horario.php');
                         break;
-                    case 'info':
-                        include('views/intranet/info.php');
+                    case 'miventa':
+                        include('views/intranet/miventa.php');
                         break;
-                    case 'misventas':
-                        include('views/intranet/misventas.php');
+                    case 'micaja':
+                        include('views/intranet/micaja.php');
+                        break;
+                    case 'informacion':
+                        include('views/intranet/informacion.php');
                         break;
                     case 'resumen':
                         include('views/resumen.html');
@@ -122,4 +124,3 @@
 </body>
 
 </html>
-

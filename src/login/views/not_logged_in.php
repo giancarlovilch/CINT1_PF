@@ -26,7 +26,6 @@ if (isset($login)) {
 </head>
 
 <body>
-    <!-- Formulario de inicio de sesión -->
     <form method="post" action="index.php" name="loginform">
         <label for="login_input_username">USUARIO</label>
         <input id="login_input_username" class="login_input" type="text" name="user_name" required />
