@@ -22,8 +22,8 @@
     </header>
     <div class="nav-bg">
         <nav class="navegacion contenedor">
-            <a href="#">Principal</a>
-            <a href="src/login/index.php">Intranet</a>
+            <a href="#">PRINCIPAL</a>
+            <a href="src/login/index.php">INTRANET</a>
             
         </nav>
     </div>

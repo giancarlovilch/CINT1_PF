@@ -32,6 +32,12 @@
                         <a href="index.php" class="nav__link">Home</a>
                     </div>
                 </li>
+                <li class="list__item">
+                    <div class="list__button">
+                        <img src="assets/schedulee.svg" class="list__img">
+                        <a href="index.php?page=organigrama#sidebar-1" class="nav__link">Organigrama</a>
+                    </div>
+                </li>
 
                 <li class="list__item">
                     <div class="list__button">
@@ -92,11 +98,14 @@
 
         <aside class="sidebar-1" id="sidebar-1">
             <?php
-            $allowed_pages = ['horario', 'miventa','micaja','informacion' ];
+            $allowed_pages = ['organigrama','horario', 'miventa','micaja','informacion' ];
 
             if (isset($_GET['page']) && in_array($_GET['page'], $allowed_pages)) {
                 $page = $_GET['page'];
                 switch ($page) {
+                    case 'organigrama':
+                        include('views/intranet/organigrama.php');
+                        break;
                     case 'horario':
                         include('views/intranet/horario.php');
                         break;
