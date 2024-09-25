@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+	<form action="Login.jsp" method="post">
+	<div class="container">
+		<div class="loginbox">
+			<h2>Login</h2>
+				<div class="customselect">
+					<div class="select">
+  					<select  name="utype" required>
+    					<option value="" selected disabled>Seleccione el Tipo de Cuenta</option>
+    					<option value="1">Cliente</option>
+    					<option value="2">Vendedor</option>
+  					</select>
+					</div>
+				</div>
+			<input type="text" name="userid" placeholder="Introducir ID de Usuario" required>
+			<input type="password" name="password" placeholder="Introducir Contraseña" required>
+			<h3>Contraseña Inválida</h3>
+			<input type="submit" value="Login">
+		</div>
+	</div>
+	</form>
+</body>
+</html>
