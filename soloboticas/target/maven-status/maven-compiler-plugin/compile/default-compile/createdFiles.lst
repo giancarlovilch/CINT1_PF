@@ -1,5 +1,6 @@
 com\mycompany\soloboticas\controller\LoginController.class
 com\mycompany\soloboticas\model\Seller.class
+com\mycompany\soloboticas\security\PasswordHashing.class
 com\mycompany\soloboticas\jdbc\TestConnectionServlet.class
 com\mycompany\soloboticas\jdbc\JdbcConnection.class
 com\mycompany\soloboticas\controller\SellerRegisterController.class

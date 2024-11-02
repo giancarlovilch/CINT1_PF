@@ -10,6 +10,7 @@
 	<%@ page import="java.sql.*" %>
 	<%@ page import="javax.sql.*" %>
 	<%@ page import="com.mycompany.soloboticas.jdbc.JdbcConnection" %>
+        <%@ page import="com.mycompany.soloboticas.security.PasswordHashing" %>
 	<%
 		String uid1=request.getParameter("userid");
 		String pass1=request.getParameter("password");
@@ -41,7 +42,9 @@
 		rs=ps.executeQuery();
 		if(rs.next())
 		{
-			if((rs.getString(2)).equals(pass1))
+                        String storedHash = rs.getString("pass");
+                        String enteredHash = PasswordHashing.hashPassword(pass1); // Hasheando la contraseña ingresada
+			if(storedHash.equals(enteredHash)) 
 			{
 				if(u==1)
 					response.sendRedirect("Homepage.jsp");

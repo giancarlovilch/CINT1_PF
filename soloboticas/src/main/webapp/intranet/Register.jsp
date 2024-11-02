@@ -10,7 +10,9 @@
 	<%@ page import="java.sql.*" %>
 	<%@ page import="javax.sql.*" %>
 	<%@ page import="com.mycompany.soloboticas.jdbc.JdbcConnection" %>
-	<%
+        <%@ page import="com.mycompany.soloboticas.security.PasswordHashing" %>
+
+	<%                  
 		String fname1=request.getParameter("fname");
 		String lname1=request.getParameter("lname");
 		String email1=request.getParameter("email");
@@ -42,9 +44,10 @@
 			{
 				if(pass1.equals(pass2))
 				{
+                                        String hashedPassword = PasswordHashing.hashPassword(pass1); // Hasheando la contraseña
 					ps2=conn.prepareStatement(query2);
 					ps2.setString(1,uid1);
-					ps2.setString(2,pass1);
+					ps2.setString(2, hashedPassword); // Guardando el hash
 					ps2.setString(3,fname1);
 					ps2.setString(4,lname1);
 					ps2.setString(5,email1);

@@ -8,7 +8,7 @@ public class JdbcConnection {
     static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost:3306/sb_db";
     static final String USER = "root";
-    static final String PASS = "root";
+    static final String PASS = "";
 
     public static Connection getConncetion() {
         Connection con = null;
