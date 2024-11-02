@@ -14,26 +14,28 @@ if(null == session.getAttribute("currentuser"))
 <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
-<div class="main">
-	<div class="topbar1"></div>
-	<div class="topbar2">
-		<div class="container1">
-			<div class="logout-btn">
-				<a href="Logout.jsp">Logout</a>
-			</div>
-		</div>
-	</div>
-	<div class="header">
-		<div class="container2">
-			<div class="navbar">
-				<a href="SellerHomepage.jsp">PRINCIPAL</a>
-				<a href="AddProduct.html">CREAR</a>
-				<a href="AddInventory.jsp">REPONER</a>
-				<a href="SellerOrders.jsp">ORDENES</a>
-			</div>
-		</div>
-	</div>
-	</div>
+    <div class="main">
+        <div class="topbar1"></div>
+        <div class="topbar2">
+            <div class="container1">
+                <b style="color: white;font-size:30px ">HOLA BIENVENIDO</b>                  
+                <div class="logout-btn">                            
+                    <a href="Logout.jsp">Logout</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="header">
+            <div class="container2">
+                <div class="navbar">
+                    <a href="SellerHomepage.jsp">PRINCIPAL</a>
+                    <a href="AddProduct.html">CREAR</a>
+                    <a href="AddInventory.jsp">REPONER</a>
+                    <a href="SellerOrders.jsp">ORDENES</a>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="active">
 	<%@ page import="java.sql.*" %>
 	<%@ page import="javax.sql.*" %>
@@ -43,7 +45,7 @@ if(null == session.getAttribute("currentuser"))
     String guid=(String)httpSession.getAttribute("currentuser");
     %>
     <div class="filler"></div>
-    <h2>welcome <%=guid%></h2>
+    <h2>USUARIO <%=guid%></h2>
     <%
 	ResultSet rs=null;
 	PreparedStatement ps=null;
