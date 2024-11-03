@@ -1,0 +1,3 @@
+com\mycompany\soloboticas\controller\PasswordHashingTest.class
+com\mycompany\soloboticas\controller\LoginControllerTest.class
+com\mycompany\soloboticas\controller\JdbcConnectionTest.class
