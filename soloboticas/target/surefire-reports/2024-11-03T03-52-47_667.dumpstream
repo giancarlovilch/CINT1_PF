@@ -1,5 +1,0 @@
-# Created at 2024-11-03T03:52:47.794
-Boot Manifest-JAR contains absolute paths in classpath 'D:\UNI08\Source\CINT1\CINT1_PF2\CINT1_PF\soloboticas\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
