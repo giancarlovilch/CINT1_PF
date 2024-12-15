@@ -1,0 +1,30 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TomCat" type="com.poratu.idea.plugins.tomcat" singleton="false">
+    <log_file alias="Tomcat Catalina Log" path="$USER_HOME$/.SmartTomcat/CINT1_PF/CINT1_PF/logs/catalina.*" />
+    <log_file alias="Tomcat Manager Log" path="$USER_HOME$/.SmartTomcat/CINT1_PF/CINT1_PF/logs/manager.*" />
+    <log_file alias="Tomcat Host Manager Log" path="$USER_HOME$/.SmartTomcat/CINT1_PF/CINT1_PF/logs/host-manager.*" />
+    <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+    <predefined_log_file enabled="true" id="Tomcat Access Log" />
+    <option name="adminPort" value="8006" />
+    <option name="catalinaBase" value="C:\Users\pc\.SmartTomcat\CINT1_PF\CINT1_PF" />
+    <option name="contextPath" value="/" />
+    <option name="docBase" value="C:\Users\pc\Desktop\CursoIntegrador\ProyectoCurIntegrador\CINT1_PF" />
+    <option name="envOptions">
+      <map />
+    </option>
+    <option name="extraClassPath" value="" />
+    <option name="port" value="8081" />
+    <option name="tomcatInfo">
+      <TomcatInfo>
+        <option name="name" value="Apache Tomcat/10.1.31" />
+        <option name="path" value="$PROJECT_DIR$/../../../../../../DesTomancat/apache-tomcat-10.1.31" />
+        <option name="version" value="10.1.31.0" />
+      </TomcatInfo>
+    </option>
+    <option name="vmOptions" value="" />
+    <module name="CINT1_PF" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
